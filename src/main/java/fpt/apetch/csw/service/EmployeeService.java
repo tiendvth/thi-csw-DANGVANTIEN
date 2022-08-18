@@ -31,6 +31,7 @@ public class EmployeeService {
             Employee employee = tblClassOptional.get();
             employee.setName(employeeUpdate.getName());
             employee.setSalary(employeeUpdate.getSalary());
+            employee.setStatus(employeeUpdate.getStatus());
             return employeeRepository.save(employee);
         }
         return null;

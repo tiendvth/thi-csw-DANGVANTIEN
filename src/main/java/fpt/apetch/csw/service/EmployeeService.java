@@ -13,7 +13,7 @@ import java.util.Optional;
 public class EmployeeService {
     final EmployeeRepository employeeRepository;
 
-    public List<Employee> getEmployee() {
+    public List<Employee> findAll() {
         return employeeRepository.findAll();
     }
 
@@ -21,7 +21,7 @@ public class EmployeeService {
         return employeeRepository.findById(id);
     }
 
-    public Employee addEmployee(Employee employee) {
+    public Employee save(Employee employee) {
         return employeeRepository.save(employee);
     }
 
